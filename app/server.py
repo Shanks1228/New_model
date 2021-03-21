@@ -9,10 +9,10 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://drive.google.com/uc?export=download&id=1WD7jVM_nsC6EbjueNLDteyqyQ62o1vq9'
-export_file_name = 'steel_model.pkl'
+export_file_url = 'https://drive.google.com/drive/folders/1NqW9f7ntt6MclNja9dCDHg-dBUpQa0vy?usp=sharing'
+export_file_name = 'model1.pkl'
 
-classes = ['Defect', 'No Defect']
+classes = ['red', 'yellow', 'green', 'off']
 path = Path(__file__).parent
 
 app = Starlette()
